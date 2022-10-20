@@ -1,0 +1,242 @@
+diff --git a/dist/memoize.browser.cjs.js b/dist/memoize.browser.cjs.js
+deleted file mode 100644
+index b433f5ec9b4c995bed6389579802e68a7cbb4ce3..0000000000000000000000000000000000000000
+--- a/dist/memoize.browser.cjs.js
++++ /dev/null
+@@ -1,13 +0,0 @@
+-'use strict';
+-
+-Object.defineProperty(exports, '__esModule', { value: true });
+-
+-function memoize(fn) {
+-  var cache = {};
+-  return function (arg) {
+-    if (cache[arg] === undefined) cache[arg] = fn(arg);
+-    return cache[arg];
+-  };
+-}
+-
+-exports.default = memoize;
+diff --git a/dist/memoize.browser.esm.js b/dist/memoize.browser.esm.js
+deleted file mode 100644
+index 1e27d04b55de6b6200617d8d0bb436773578e79b..0000000000000000000000000000000000000000
+--- a/dist/memoize.browser.esm.js
++++ /dev/null
+@@ -1,9 +0,0 @@
+-function memoize(fn) {
+-  var cache = {};
+-  return function (arg) {
+-    if (cache[arg] === undefined) cache[arg] = fn(arg);
+-    return cache[arg];
+-  };
+-}
+-
+-export default memoize;
+diff --git a/dist/memoize.browser.js b/dist/memoize.browser.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..b433f5ec9b4c995bed6389579802e68a7cbb4ce3
+--- /dev/null
++++ b/dist/memoize.browser.js
+@@ -0,0 +1,13 @@
++'use strict';
++
++Object.defineProperty(exports, '__esModule', { value: true });
++
++function memoize(fn) {
++  var cache = {};
++  return function (arg) {
++    if (cache[arg] === undefined) cache[arg] = fn(arg);
++    return cache[arg];
++  };
++}
++
++exports.default = memoize;
+diff --git a/dist/memoize.browser.mjs b/dist/memoize.browser.mjs
+new file mode 100644
+index 0000000000000000000000000000000000000000..1e27d04b55de6b6200617d8d0bb436773578e79b
+--- /dev/null
++++ b/dist/memoize.browser.mjs
+@@ -0,0 +1,9 @@
++function memoize(fn) {
++  var cache = {};
++  return function (arg) {
++    if (cache[arg] === undefined) cache[arg] = fn(arg);
++    return cache[arg];
++  };
++}
++
++export default memoize;
+diff --git a/dist/memoize.cjs.dev.js b/dist/memoize.cjs.dev.js
+deleted file mode 100644
+index b433f5ec9b4c995bed6389579802e68a7cbb4ce3..0000000000000000000000000000000000000000
+--- a/dist/memoize.cjs.dev.js
++++ /dev/null
+@@ -1,13 +0,0 @@
+-'use strict';
+-
+-Object.defineProperty(exports, '__esModule', { value: true });
+-
+-function memoize(fn) {
+-  var cache = {};
+-  return function (arg) {
+-    if (cache[arg] === undefined) cache[arg] = fn(arg);
+-    return cache[arg];
+-  };
+-}
+-
+-exports.default = memoize;
+diff --git a/dist/memoize.cjs.js b/dist/memoize.cjs.js
+deleted file mode 100644
+index 4cc3416a36395c2a2ee4cfca617904dff6b69181..0000000000000000000000000000000000000000
+--- a/dist/memoize.cjs.js
++++ /dev/null
+@@ -1,7 +0,0 @@
+-'use strict';
+-
+-if (process.env.NODE_ENV === "production") {
+-  module.exports = require("./memoize.cjs.prod.js");
+-} else {
+-  module.exports = require("./memoize.cjs.dev.js");
+-}
+diff --git a/dist/memoize.cjs.js.flow b/dist/memoize.cjs.js.flow
+deleted file mode 100644
+index 71889637109c9c7f1edff7f8de3c9b212629e524..0000000000000000000000000000000000000000
+--- a/dist/memoize.cjs.js.flow
++++ /dev/null
+@@ -1,3 +0,0 @@
+-// @flow
+-export * from "../src/index.js";
+-export { default } from "../src/index.js";
+diff --git a/dist/memoize.cjs.prod.js b/dist/memoize.cjs.prod.js
+deleted file mode 100644
+index b14c384b86aa544feedfd5add9d3c7726838f789..0000000000000000000000000000000000000000
+--- a/dist/memoize.cjs.prod.js
++++ /dev/null
+@@ -1,12 +0,0 @@
+-"use strict";
+-
+-function memoize(fn) {
+-  var cache = {};
+-  return function(arg) {
+-    return void 0 === cache[arg] && (cache[arg] = fn(arg)), cache[arg];
+-  };
+-}
+-
+-Object.defineProperty(exports, "__esModule", {
+-  value: !0
+-}), exports.default = memoize;
+diff --git a/dist/memoize.dev.js b/dist/memoize.dev.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..b433f5ec9b4c995bed6389579802e68a7cbb4ce3
+--- /dev/null
++++ b/dist/memoize.dev.js
+@@ -0,0 +1,13 @@
++'use strict';
++
++Object.defineProperty(exports, '__esModule', { value: true });
++
++function memoize(fn) {
++  var cache = {};
++  return function (arg) {
++    if (cache[arg] === undefined) cache[arg] = fn(arg);
++    return cache[arg];
++  };
++}
++
++exports.default = memoize;
+diff --git a/dist/memoize.esm.js b/dist/memoize.esm.js
+deleted file mode 100644
+index 1e27d04b55de6b6200617d8d0bb436773578e79b..0000000000000000000000000000000000000000
+--- a/dist/memoize.esm.js
++++ /dev/null
+@@ -1,9 +0,0 @@
+-function memoize(fn) {
+-  var cache = {};
+-  return function (arg) {
+-    if (cache[arg] === undefined) cache[arg] = fn(arg);
+-    return cache[arg];
+-  };
+-}
+-
+-export default memoize;
+diff --git a/dist/memoize.js b/dist/memoize.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..4cc3416a36395c2a2ee4cfca617904dff6b69181
+--- /dev/null
++++ b/dist/memoize.js
+@@ -0,0 +1,7 @@
++'use strict';
++
++if (process.env.NODE_ENV === "production") {
++  module.exports = require("./memoize.cjs.prod.js");
++} else {
++  module.exports = require("./memoize.cjs.dev.js");
++}
+diff --git a/dist/memoize.js.flow b/dist/memoize.js.flow
+new file mode 100644
+index 0000000000000000000000000000000000000000..71889637109c9c7f1edff7f8de3c9b212629e524
+--- /dev/null
++++ b/dist/memoize.js.flow
+@@ -0,0 +1,3 @@
++// @flow
++export * from "../src/index.js";
++export { default } from "../src/index.js";
+diff --git a/dist/memoize.mjs b/dist/memoize.mjs
+new file mode 100644
+index 0000000000000000000000000000000000000000..1e27d04b55de6b6200617d8d0bb436773578e79b
+--- /dev/null
++++ b/dist/memoize.mjs
+@@ -0,0 +1,9 @@
++function memoize(fn) {
++  var cache = {};
++  return function (arg) {
++    if (cache[arg] === undefined) cache[arg] = fn(arg);
++    return cache[arg];
++  };
++}
++
++export default memoize;
+diff --git a/dist/memoize.prod.js b/dist/memoize.prod.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..b14c384b86aa544feedfd5add9d3c7726838f789
+--- /dev/null
++++ b/dist/memoize.prod.js
+@@ -0,0 +1,12 @@
++"use strict";
++
++function memoize(fn) {
++  var cache = {};
++  return function(arg) {
++    return void 0 === cache[arg] && (cache[arg] = fn(arg)), cache[arg];
++  };
++}
++
++Object.defineProperty(exports, "__esModule", {
++  value: !0
++}), exports.default = memoize;
+diff --git a/package.json b/package.json
+index 768455d45fd98d20b4fd0f7d35e51299f518ddc1..d39d7951250b6a2957cb226e44fec12210adbdd5 100644
+--- a/package.json
++++ b/package.json
+@@ -2,11 +2,19 @@
+   "name": "@emotion/memoize",
+   "version": "0.7.4",
+   "description": "emotion's memoize utility",
+-  "main": "dist/memoize.cjs.js",
+-  "module": "dist/memoize.esm.js",
++  "main": "dist/memoize.js",
++  "module": "dist/memoize.mjs",
+   "types": "types/index.d.ts",
+   "license": "MIT",
+   "repository": "https://github.com/emotion-js/emotion/tree/master/packages/memoize",
++  "exports": {
++    ".": {
++      "types": "./types/index.d.ts",
++      "import": "./dist/memoize.mjs",
++      "require": "./dist/memoize.js"
++    },
++    "./package.json": "./package.json"
++  },
+   "scripts": {
+     "test:typescript": "dtslint types"
+   },
