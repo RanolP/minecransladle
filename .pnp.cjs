@@ -37,6 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@linaria/rollup", "npm:4.2.0"],\
             ["@preact/preset-vite", "virtual:865e2c0aa9feb2e3f647124d8470e25b8fd3ab2065810abea1f184e9a53f54f3b7d456d1dae81eda8c0c62dab6233c1201331e76bbd1edd94b3be101656a7637#npm:2.4.0"],\
             ["@types/node", "npm:18.11.2"],\
+            ["@types/react", "npm:18.0.21"],\
             ["babel-plugin-transform-hook-names", "virtual:865e2c0aa9feb2e3f647124d8470e25b8fd3ab2065810abea1f184e9a53f54f3b7d456d1dae81eda8c0c62dab6233c1201331e76bbd1edd94b3be101656a7637#npm:1.0.2"],\
             ["preact", "npm:10.11.2"],\
             ["preact-render-to-string", "virtual:865e2c0aa9feb2e3f647124d8470e25b8fd3ab2065810abea1f184e9a53f54f3b7d456d1dae81eda8c0c62dab6233c1201331e76bbd1edd94b3be101656a7637#npm:5.2.5"],\
@@ -2688,7 +2689,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@linaria/core", "npm:4.2.0"],\
             ["@linaria/tags", "npm:4.1.4"],\
             ["@linaria/utils", "npm:4.2.2"],\
-            ["@types/react", null],\
+            ["@types/react", "npm:18.0.21"],\
             ["react", [\
               "@preact/compat",\
               "virtual:865e2c0aa9feb2e3f647124d8470e25b8fd3ab2065810abea1f184e9a53f54f3b7d456d1dae81eda8c0c62dab6233c1201331e76bbd1edd94b3be101656a7637#npm:17.1.2"\
@@ -2968,6 +2969,36 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-node-npm-18.11.2-c7d12dbe39-0ff5c90fb9.zip/node_modules/@types/node/",\
           "packageDependencies": [\
             ["@types/node", "npm:18.11.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/prop-types", [\
+        ["npm:15.7.5", {\
+          "packageLocation": "./.yarn/cache/@types-prop-types-npm-15.7.5-2aa48aa177-5b43b8b154.zip/node_modules/@types/prop-types/",\
+          "packageDependencies": [\
+            ["@types/prop-types", "npm:15.7.5"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/react", [\
+        ["npm:18.0.21", {\
+          "packageLocation": "./.yarn/cache/@types-react-npm-18.0.21-e933f9864e-36c1a7c9d5.zip/node_modules/@types/react/",\
+          "packageDependencies": [\
+            ["@types/react", "npm:18.0.21"],\
+            ["@types/prop-types", "npm:15.7.5"],\
+            ["@types/scheduler", "npm:0.16.2"],\
+            ["csstype", "npm:3.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/scheduler", [\
+        ["npm:0.16.2", {\
+          "packageLocation": "./.yarn/cache/@types-scheduler-npm-0.16.2-ba3a7d8c68-b6b4dcfeae.zip/node_modules/@types/scheduler/",\
+          "packageDependencies": [\
+            ["@types/scheduler", "npm:0.16.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3462,6 +3493,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["is-directory", "npm:0.3.1"],\
             ["js-yaml", "npm:3.14.1"],\
             ["parse-json", "npm:4.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["csstype", [\
+        ["npm:3.1.1", {\
+          "packageLocation": "./.yarn/cache/csstype-npm-3.1.1-3857baf48b-1f7b4f5fdd.zip/node_modules/csstype/",\
+          "packageDependencies": [\
+            ["csstype", "npm:3.1.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4469,6 +4509,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@linaria/rollup", "npm:4.2.0"],\
             ["@preact/preset-vite", "virtual:865e2c0aa9feb2e3f647124d8470e25b8fd3ab2065810abea1f184e9a53f54f3b7d456d1dae81eda8c0c62dab6233c1201331e76bbd1edd94b3be101656a7637#npm:2.4.0"],\
             ["@types/node", "npm:18.11.2"],\
+            ["@types/react", "npm:18.0.21"],\
             ["babel-plugin-transform-hook-names", "virtual:865e2c0aa9feb2e3f647124d8470e25b8fd3ab2065810abea1f184e9a53f54f3b7d456d1dae81eda8c0c62dab6233c1201331e76bbd1edd94b3be101656a7637#npm:1.0.2"],\
             ["preact", "npm:10.11.2"],\
             ["preact-render-to-string", "virtual:865e2c0aa9feb2e3f647124d8470e25b8fd3ab2065810abea1f184e9a53f54f3b7d456d1dae81eda8c0c62dab6233c1201331e76bbd1edd94b3be101656a7637#npm:5.2.5"],\
@@ -8458,7 +8499,7 @@ class VirtualFS extends ProxiedFS {
   mapToBase(p) {
     if (p === ``)
       return p;
-    p=`${p}`;
+    p = `${p}`;
     if (this.pathUtils.isAbsolute(p))
       return VirtualFS.resolveVirtual(p);
     const resolvedRoot = VirtualFS.resolveVirtual(this.baseFs.resolve(PortablePath.dot));

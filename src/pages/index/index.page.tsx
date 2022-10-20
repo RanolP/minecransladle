@@ -1,4 +1,5 @@
 import { styled } from '@linaria/react';
+
 const Wrap = styled.div``;
 
 export function Page() {
