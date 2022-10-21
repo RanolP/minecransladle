@@ -1,0 +1,25 @@
+diff --git a/package.json b/package.json
+index 0c2bf9b31a6aa2e742f33bb6e9b58b566329a9e0..72b8da44525f11e60d5d150dd80e0693251b6878 100644
+--- a/package.json
++++ b/package.json
+@@ -2,7 +2,8 @@
+   "name": "@emotion/is-prop-valid",
+   "version": "1.2.0",
+   "description": "A function to check whether a prop is valid for HTML and SVG elements",
+-  "main": "dist/emotion-is-prop-valid.cjs.js",
++  "type": "module",
++  "main": "dist/emotion-is-prop-valid.esm.js",
+   "module": "dist/emotion-is-prop-valid.esm.js",
+   "types": "types/index.d.ts",
+   "license": "MIT",
+@@ -27,8 +28,8 @@
+   ],
+   "exports": {
+     ".": {
+-      "module": "./dist/emotion-is-prop-valid.esm.js",
+-      "default": "./dist/emotion-is-prop-valid.cjs.js"
++      "import": "./dist/emotion-is-prop-valid.esm.js",
++      "require": "./dist/emotion-is-prop-valid.cjs.js"
+     },
+     "./package.json": "./package.json"
+   }

@@ -8,20 +8,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@linaria/core": "^4.2.0",
-    "@linaria/react": "^4.2.0",
+    "@linaria/core": "^4.2.1",
+    "@linaria/react": "^4.2.1",
     "preact": "^10.11.2",
     "preact-render-to-string": "^5.2.5",
-    "react": "npm:@preact/compat@latest"
+    "react": "npm:@preact/compat@17.1.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.19.3",
+    "@babel/core": "^7.19.6",
     "@babel/plugin-transform-react-jsx": "^7.19.0",
     "@babel/plugin-transform-react-jsx-development": "^7.18.6",
-    "@linaria/babel-preset": "^4.2.3",
-    "@linaria/rollup": "^4.2.0",
+    "@linaria/babel-preset": "^4.2.4",
+    "@linaria/rollup": "^4.2.1",
     "@preact/preset-vite": "^2.4.0",
-    "@types/node": "^18.11.2",
+    "@types/node": "^18.11.3",
     "@types/react": "^18.0.21",
     "babel-plugin-transform-hook-names": "^1.0.2",
     "typescript": "^4.8.4",
@@ -30,7 +30,7 @@
   },
   "packageManager": "yarn@3.2.4",
   "resolutions": {
-    "@emotion/is-prop-valid@^0.8.8": "patch:@emotion/is-prop-valid@npm%3A0.8.8#./.yarn/patches/@emotion-is-prop-valid-npm-0.8.8-261a0f2426.patch",
-    "@emotion/memoize@0.7.4": "patch:@emotion/memoize@npm%3A0.7.4#./.yarn/patches/@emotion-memoize-npm-0.7.4-5648cf11b8.patch"
+    "@emotion/is-prop-valid@^1.2.0": "patch:@emotion/is-prop-valid@npm%3A1.2.0#./.yarn/patches/@emotion-is-prop-valid-npm-1.2.0-332d343e3d.patch",
+    "@emotion/memoize@^0.8.0": "patch:@emotion/memoize@npm%3A0.8.0#./.yarn/patches/@emotion-memoize-npm-0.8.0-c5dd451828.patch"
   }
 }

@@ -61,26 +61,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.19.3":
-  version: 7.19.3
-  resolution: "@babel/core@npm:7.19.3"
+"@babel/core@npm:^7.19.6":
+  version: 7.19.6
+  resolution: "@babel/core@npm:7.19.6"
   dependencies:
     "@ampproject/remapping": ^2.1.0
     "@babel/code-frame": ^7.18.6
-    "@babel/generator": ^7.19.3
+    "@babel/generator": ^7.19.6
     "@babel/helper-compilation-targets": ^7.19.3
-    "@babel/helper-module-transforms": ^7.19.0
-    "@babel/helpers": ^7.19.0
-    "@babel/parser": ^7.19.3
+    "@babel/helper-module-transforms": ^7.19.6
+    "@babel/helpers": ^7.19.4
+    "@babel/parser": ^7.19.6
     "@babel/template": ^7.18.10
-    "@babel/traverse": ^7.19.3
-    "@babel/types": ^7.19.3
+    "@babel/traverse": ^7.19.6
+    "@babel/types": ^7.19.4
     convert-source-map: ^1.7.0
     debug: ^4.1.0
     gensync: ^1.0.0-beta.2
     json5: ^2.2.1
     semver: ^6.3.0
-  checksum: dd883311209ad5a2c65b227daeb7247d90a382c50f4c6ad60c5ee40927eb39c34f0690d93b775c0427794261b72fa8f9296589a2dbda0782366a9f1c6de00c08
+  checksum: 85c0bd38d0ef180aa2d23c3db6840a0baec88d2e05c30e7ffc3dfeb6b2b89d6e4864922f04997a1f4ce55f9dd469bf2e76518d5c7ae744b98516709d32769b73
   languageName: node
   linkType: hard
 
@@ -106,7 +106,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/generator@npm:^7.19.3, @babel/generator@npm:^7.19.4":
+"@babel/generator@npm:^7.19.4":
   version: 7.19.5
   resolution: "@babel/generator@npm:7.19.5"
   dependencies:
@@ -114,6 +114,17 @@ __metadata:
     "@jridgewell/gen-mapping": ^0.3.2
     jsesc: ^2.5.1
   checksum: a66eafc540f80fc36c1b009b28bde1d12aff85e7916e7f5adf49c5a8866fecee4906b3c3c6db315d2723ea54e4e5ddfb2913fe6ab424f51dbccf753000930eaf
+  languageName: node
+  linkType: hard
+
+"@babel/generator@npm:^7.19.6":
+  version: 7.19.6
+  resolution: "@babel/generator@npm:7.19.6"
+  dependencies:
+    "@babel/types": ^7.19.4
+    "@jridgewell/gen-mapping": ^0.3.2
+    jsesc: ^2.5.1
+  checksum: 734fcb1fbef182e7b8967459cb39b81edd2701dd13170c154b368d4e086842f72ef214798c5a37e67e0a695dfb34b13143277bedcd9795b3b1b83da8e1d236c6
   languageName: node
   linkType: hard
 
@@ -288,19 +299,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helper-module-transforms@npm:^7.19.0":
-  version: 7.19.0
-  resolution: "@babel/helper-module-transforms@npm:7.19.0"
+"@babel/helper-module-transforms@npm:^7.19.6":
+  version: 7.19.6
+  resolution: "@babel/helper-module-transforms@npm:7.19.6"
   dependencies:
     "@babel/helper-environment-visitor": ^7.18.9
     "@babel/helper-module-imports": ^7.18.6
-    "@babel/helper-simple-access": ^7.18.6
+    "@babel/helper-simple-access": ^7.19.4
     "@babel/helper-split-export-declaration": ^7.18.6
-    "@babel/helper-validator-identifier": ^7.18.6
+    "@babel/helper-validator-identifier": ^7.19.1
     "@babel/template": ^7.18.10
-    "@babel/traverse": ^7.19.0
-    "@babel/types": ^7.19.0
-  checksum: 4483276c66f56cf3b5b063634092ad9438c2593725de5c143ba277dda82f1501e6d73b311c1b28036f181dbe36eaeff29f24726cde37a599d4e735af294e5359
+    "@babel/traverse": ^7.19.6
+    "@babel/types": ^7.19.4
+  checksum: c28692b37d4b5abacc775bcab52a74f44a493f38c58cb72b56a6c6d67a97485dd8aff6f26905abd1a924d3261a171d0214a9fb76f48d8598f1e35b8b29284792
   languageName: node
   linkType: hard
 
@@ -360,6 +371,15 @@ __metadata:
   dependencies:
     "@babel/types": ^7.18.6
   checksum: 37cd36eef199e0517845763c1e6ff6ea5e7876d6d707a6f59c9267c547a50aa0e84260ba9285d49acfaf2cfa0a74a772d92967f32ac1024c961517d40b6c16a5
+  languageName: node
+  linkType: hard
+
+"@babel/helper-simple-access@npm:^7.19.4":
+  version: 7.19.4
+  resolution: "@babel/helper-simple-access@npm:7.19.4"
+  dependencies:
+    "@babel/types": ^7.19.4
+  checksum: 964cb1ec36b69aabbb02f8d5ee1d680ebbb628611a6740958d9b05107ab16c0492044e430618ae42b1f8ea73e4e1bafe3750e8ebc959d6f3277d9cfbe1a94880
   languageName: node
   linkType: hard
 
@@ -439,7 +459,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helpers@npm:^7.19.0":
+"@babel/helpers@npm:^7.19.4":
   version: 7.19.4
   resolution: "@babel/helpers@npm:7.19.4"
   dependencies:
@@ -479,12 +499,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/parser@npm:^7.19.3, @babel/parser@npm:^7.19.4":
+"@babel/parser@npm:^7.19.4":
   version: 7.19.4
   resolution: "@babel/parser@npm:7.19.4"
   bin:
     parser: ./bin/babel-parser.js
   checksum: 5ef97da97915085ff3b9c562b04fb6316074ece52d20de95f44c47b46abf87fd754cbcae769a69570a84652b736afe5bb2cb7dc117aa7ad6d81ab40eed0c613b
+  languageName: node
+  linkType: hard
+
+"@babel/parser@npm:^7.19.6":
+  version: 7.19.6
+  resolution: "@babel/parser@npm:7.19.6"
+  bin:
+    parser: ./bin/babel-parser.js
+  checksum: 9a3dca4ee3acd7e4fc3b58e1e1526a11fa334acbfe437f8ebf91dfaf48e943c147ef64b1733ba0a55af57d1eccafbf4e4a4afc46a15becd921971fe2ddf309bf
   languageName: node
   linkType: hard
 
@@ -1470,7 +1499,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/traverse@npm:^7.19.0, @babel/traverse@npm:^7.19.3, @babel/traverse@npm:^7.19.4":
+"@babel/traverse@npm:^7.19.4":
   version: 7.19.4
   resolution: "@babel/traverse@npm:7.19.4"
   dependencies:
@@ -1488,6 +1517,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/traverse@npm:^7.19.6":
+  version: 7.19.6
+  resolution: "@babel/traverse@npm:7.19.6"
+  dependencies:
+    "@babel/code-frame": ^7.18.6
+    "@babel/generator": ^7.19.6
+    "@babel/helper-environment-visitor": ^7.18.9
+    "@babel/helper-function-name": ^7.19.0
+    "@babel/helper-hoist-variables": ^7.18.6
+    "@babel/helper-split-export-declaration": ^7.18.6
+    "@babel/parser": ^7.19.6
+    "@babel/types": ^7.19.4
+    debug: ^4.1.0
+    globals: ^11.1.0
+  checksum: 3fafa244f7d0b696a9d38f5da016a8f8db4b08ac60a067b299a8f54d91fb7c70c3edf06f921221d333137e65ffb64392526e68fdcf596ec91e95720037789d66
+  languageName: node
+  linkType: hard
+
 "@babel/types@npm:^7.18.10, @babel/types@npm:^7.18.6, @babel/types@npm:^7.18.9, @babel/types@npm:^7.4.4, @babel/types@npm:^7.8.3":
   version: 7.18.10
   resolution: "@babel/types@npm:7.18.10"
@@ -1499,7 +1546,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/types@npm:^7.19.0, @babel/types@npm:^7.19.3, @babel/types@npm:^7.19.4":
+"@babel/types@npm:^7.19.0, @babel/types@npm:^7.19.4":
   version: 7.19.4
   resolution: "@babel/types@npm:7.19.4"
   dependencies:
@@ -1524,35 +1571,35 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/is-prop-valid@npm:0.8.8":
-  version: 0.8.8
-  resolution: "@emotion/is-prop-valid@npm:0.8.8"
+"@emotion/is-prop-valid@npm:1.2.0":
+  version: 1.2.0
+  resolution: "@emotion/is-prop-valid@npm:1.2.0"
   dependencies:
-    "@emotion/memoize": 0.7.4
-  checksum: bb7ec6d48c572c540e24e47cc94fc2f8dec2d6a342ae97bc9c8b6388d9b8d283862672172a1bb62d335c02662afe6291e10c71e9b8642664a8b43416cdceffac
+    "@emotion/memoize": ^0.8.0
+  checksum: cc7a19850a4c5b24f1514665289442c8c641709e6f7711067ad550e05df331da0692a16148e85eda6f47e31b3261b64d74c5e25194d053223be16231f969d633
   languageName: node
   linkType: hard
 
-"@emotion/is-prop-valid@patch:@emotion/is-prop-valid@npm%3A0.8.8#./.yarn/patches/@emotion-is-prop-valid-npm-0.8.8-261a0f2426.patch::locator=minecransladle%40workspace%3A.":
-  version: 0.8.8
-  resolution: "@emotion/is-prop-valid@patch:@emotion/is-prop-valid@npm%3A0.8.8#./.yarn/patches/@emotion-is-prop-valid-npm-0.8.8-261a0f2426.patch::version=0.8.8&hash=541850&locator=minecransladle%40workspace%3A."
+"@emotion/is-prop-valid@patch:@emotion/is-prop-valid@npm%3A1.2.0#./.yarn/patches/@emotion-is-prop-valid-npm-1.2.0-332d343e3d.patch::locator=minecransladle%40workspace%3A.":
+  version: 1.2.0
+  resolution: "@emotion/is-prop-valid@patch:@emotion/is-prop-valid@npm%3A1.2.0#./.yarn/patches/@emotion-is-prop-valid-npm-1.2.0-332d343e3d.patch::version=1.2.0&hash=ae983c&locator=minecransladle%40workspace%3A."
   dependencies:
-    "@emotion/memoize": 0.7.4
-  checksum: 646e888cc0239f699279bb5a73b7ab4e1d9fd78563d30c29789e6d9f7e34c1cd57d2dc890f6faaae69c30540b28342e3eb196338898682a9dbf39912fca70f1d
+    "@emotion/memoize": ^0.8.0
+  checksum: aec613a043be0324ab3a79b9674cfd107d504fccd975d9615db5524042488671487f46af4b2948928170b20eaad2ec373287f871cdd5fe9b415eb1c978d7a915
   languageName: node
   linkType: hard
 
-"@emotion/memoize@npm:0.7.4":
-  version: 0.7.4
-  resolution: "@emotion/memoize@npm:0.7.4"
-  checksum: 4e3920d4ec95995657a37beb43d3f4b7d89fed6caa2b173a4c04d10482d089d5c3ea50bbc96618d918b020f26ed6e9c4026bbd45433566576c1f7b056c3271dc
+"@emotion/memoize@npm:0.8.0":
+  version: 0.8.0
+  resolution: "@emotion/memoize@npm:0.8.0"
+  checksum: c87bb110b829edd8e1c13b90a6bc37cebc39af29c7599a1e66a48e06f9bec43e8e53495ba86278cc52e7589549492c8dfdc81d19f4fdec0cee6ba13d2ad2c928
   languageName: node
   linkType: hard
 
-"@emotion/memoize@patch:@emotion/memoize@npm%3A0.7.4#./.yarn/patches/@emotion-memoize-npm-0.7.4-5648cf11b8.patch::locator=minecransladle%40workspace%3A.":
-  version: 0.7.4
-  resolution: "@emotion/memoize@patch:@emotion/memoize@npm%3A0.7.4#./.yarn/patches/@emotion-memoize-npm-0.7.4-5648cf11b8.patch::version=0.7.4&hash=d0b364&locator=minecransladle%40workspace%3A."
-  checksum: 614623a5e5e131ca766089fa0573ac8ae65f51468d1105d29036cbad863499b340fe4bc561d99c9e3297b5e67709e835a0ed2161980dd164ce84fd78a9e3bb9f
+"@emotion/memoize@patch:@emotion/memoize@npm%3A0.8.0#./.yarn/patches/@emotion-memoize-npm-0.8.0-c5dd451828.patch::locator=minecransladle%40workspace%3A.":
+  version: 0.8.0
+  resolution: "@emotion/memoize@patch:@emotion/memoize@npm%3A0.8.0#./.yarn/patches/@emotion-memoize-npm-0.8.0-c5dd451828.patch::version=0.8.0&hash=97b8f7&locator=minecransladle%40workspace%3A."
+  checksum: 40865d556a12962cdae6ae52e403235a8ddf5657da9cd1f91e2896dceda418af22fe678afb6cdf539bffe07218f0acd73611e3abd4757942c85639b050f7f040
   languageName: node
   linkType: hard
 
@@ -1629,9 +1676,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@linaria/babel-preset@npm:^4.2.3":
-  version: 4.2.3
-  resolution: "@linaria/babel-preset@npm:4.2.3"
+"@linaria/babel-preset@npm:^4.2.4":
+  version: 4.2.4
+  resolution: "@linaria/babel-preset@npm:4.2.4"
   dependencies:
     "@babel/core": ^7.18.9
     "@babel/generator": ^7.18.9
@@ -1639,27 +1686,27 @@ __metadata:
     "@babel/template": ^7.18.6
     "@babel/traverse": ^7.18.9
     "@babel/types": ^7.18.9
-    "@linaria/core": ^4.2.0
+    "@linaria/core": ^4.2.1
     "@linaria/logger": ^4.0.0
-    "@linaria/shaker": ^4.2.2
-    "@linaria/tags": ^4.1.4
-    "@linaria/utils": ^4.2.2
+    "@linaria/shaker": ^4.2.3
+    "@linaria/tags": ^4.1.5
+    "@linaria/utils": ^4.2.3
     cosmiconfig: ^5.1.0
     find-up: ^5.0.0
     source-map: ^0.7.3
     stylis: ^3.5.4
-  checksum: 45e6b082b75eb241af0b5a8be9a3cc44fba606a50d82a3107c127dcc6398f17efb86605d38ce4fc4d46120cb4a3b0bd90cc26a97c6927d332d453c151e6484fb
+  checksum: c3bcc2712cfa366cd9a2237c9dade75187c92dfb556ef2866fac34581291286c2b611bf48395d839d73ef9115ad0337b369e971e28e74466b4d350f7e717bfa6
   languageName: node
   linkType: hard
 
-"@linaria/core@npm:^4.2.0":
-  version: 4.2.0
-  resolution: "@linaria/core@npm:4.2.0"
+"@linaria/core@npm:^4.2.1":
+  version: 4.2.1
+  resolution: "@linaria/core@npm:4.2.1"
   dependencies:
     "@linaria/logger": ^4.0.0
-    "@linaria/tags": ^4.1.4
-    "@linaria/utils": ^4.2.2
-  checksum: 141fef4aff4a20d2fb4760fa15b926edbd721c1bbbea4adc5a14d6240016ff9fbc2b00bc966a095622d5abf3a2f2892d378822e4412088650b83f244c01266ff
+    "@linaria/tags": ^4.1.5
+    "@linaria/utils": ^4.2.3
+  checksum: a01449441eb99ef76a60c7aff5f59794d86ec58ffd3ad3431f3c193865c13e7e6785de9bf49664e93caf3b69d6a9c3f2b1824952cce0ee57fb977afeca808ef9
   languageName: node
   linkType: hard
 
@@ -1673,36 +1720,36 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@linaria/react@npm:^4.2.0":
-  version: 4.2.0
-  resolution: "@linaria/react@npm:4.2.0"
+"@linaria/react@npm:^4.2.1":
+  version: 4.2.1
+  resolution: "@linaria/react@npm:4.2.1"
   dependencies:
-    "@emotion/is-prop-valid": ^0.8.8
-    "@linaria/core": ^4.2.0
-    "@linaria/tags": ^4.1.4
-    "@linaria/utils": ^4.2.2
+    "@emotion/is-prop-valid": ^1.2.0
+    "@linaria/core": ^4.2.1
+    "@linaria/tags": ^4.1.5
+    "@linaria/utils": ^4.2.3
     ts-invariant: ^0.10.3
   peerDependencies:
     react: ">=16"
-  checksum: 4ebe0600337cae93ba61e68126ab67209a0f0ebdb9f11fd2f0afbdef70caf362f533f0807768c6217caeed85d701338d44a2695b4156bdeb67f0dfae1601af74
+  checksum: ff355b0abd28e27af516ff7a6541ae6b66fe22e5b4028ecf41d5e973286f2a7fb2f5462285a71cb00c1122e6ece6677e6e339145356726188c2a9316cccf3758
   languageName: node
   linkType: hard
 
-"@linaria/rollup@npm:^4.2.0":
-  version: 4.2.0
-  resolution: "@linaria/rollup@npm:4.2.0"
+"@linaria/rollup@npm:^4.2.1":
+  version: 4.2.1
+  resolution: "@linaria/rollup@npm:4.2.1"
   dependencies:
-    "@linaria/babel-preset": ^4.2.3
+    "@linaria/babel-preset": ^4.2.4
     "@linaria/logger": ^4.0.0
-    "@linaria/utils": ^4.2.2
+    "@linaria/utils": ^4.2.3
     "@rollup/pluginutils": ^4.1.0
-  checksum: 891c319e039305f7ad7f05f52183c86d014c89f1eb28ab836f46c1ea0e1c6e1dd3571ce4eeaa64482c7ae515a6ad2bc346d3a5ac47e1abddfc405e13ceea2f54
+  checksum: e7ca8e37b2e1836b3b85c3c9b63bf449f29ad301f07271794fb5b43b4f890b46fdf9726ee5e0b62fab936c8d41d93bcf74359b3fe8cf2ee82a948393b7e27833
   languageName: node
   linkType: hard
 
-"@linaria/shaker@npm:^4.2.2":
-  version: 4.2.2
-  resolution: "@linaria/shaker@npm:4.2.2"
+"@linaria/shaker@npm:^4.2.3":
+  version: 4.2.3
+  resolution: "@linaria/shaker@npm:4.2.3"
   dependencies:
     "@babel/core": ^7.18.9
     "@babel/generator": ^7.18.9
@@ -1711,27 +1758,27 @@ __metadata:
     "@babel/plugin-transform-template-literals": ">=7"
     "@babel/preset-env": ">=7"
     "@linaria/logger": ^4.0.0
-    "@linaria/utils": ^4.2.2
+    "@linaria/utils": ^4.2.3
     babel-plugin-transform-react-remove-prop-types: ^0.4.24
     ts-invariant: ^0.10.3
-  checksum: 24c41df1c2a357f4e19347cdb28288fb426f24edcc7486b2d2be24bf3d694c1ab10cd94288ab9d1c169116b49301ee31462b9507e90cdbe86f433e8356de07f3
+  checksum: 330b83c1840ad50d071ec40f1b37f7a421abbd05eea0bc78522c6d829ed6daf343c8a94b846415aaf8d1e33c2ef566444f4c0c01c775d4a46c1c0df66bd78488
   languageName: node
   linkType: hard
 
-"@linaria/tags@npm:^4.1.4":
-  version: 4.1.4
-  resolution: "@linaria/tags@npm:4.1.4"
+"@linaria/tags@npm:^4.1.5":
+  version: 4.1.5
+  resolution: "@linaria/tags@npm:4.1.5"
   dependencies:
     "@babel/generator": ^7.18.9
     "@linaria/logger": ^4.0.0
-    "@linaria/utils": ^4.2.2
-  checksum: baadab1a8310afb1e551b1e4244c569b69fbd0830641782f12fb943874d0bd49722ef8dac9dd7d64861844f61e3b86b3702152980482d9a04c0a593053aad0a6
+    "@linaria/utils": ^4.2.3
+  checksum: a25b94ed9c4bbc36a996ce6fde7d3cd95c33eb0682e9d5255d85415ae8f66c9271ca1a81d4e3a1ee51c0f68d102b4fde32a794b563c689df734833a098fcef27
   languageName: node
   linkType: hard
 
-"@linaria/utils@npm:^4.2.2":
-  version: 4.2.2
-  resolution: "@linaria/utils@npm:4.2.2"
+"@linaria/utils@npm:^4.2.3":
+  version: 4.2.3
+  resolution: "@linaria/utils@npm:4.2.3"
   dependencies:
     "@babel/core": ^7.18.9
     "@babel/plugin-proposal-export-namespace-from": ">=7"
@@ -1741,7 +1788,7 @@ __metadata:
     "@babel/types": ^7.18.9
     "@linaria/logger": ^4.0.0
     babel-merge: ^3.0.0
-  checksum: 9ae04a17333ea89319fd2bc44d7e4c0c725228fd13f429340b538fda3b03838159816633201dd7e0892234bf02a813f331a497323af1fd957c32521e99073fb7
+  checksum: 44e8cc78576bba08d207279cb16fae81f5da14e589fd4ada8db511bfdeb9748a061384334fc4d5b4c3fd8f6f779e954146397cdccc69f82fec8f9e8583a8614f
   languageName: node
   linkType: hard
 
@@ -1867,10 +1914,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.11.2":
-  version: 18.11.2
-  resolution: "@types/node@npm:18.11.2"
-  checksum: 0ff5c90fb9ab653e018b858479aea4d2f763b07b31f9502383d408936f525ca37cac82ea27774a0dd0356ff9badba2792a6a3fff94f79fd7c82ee2a892c43ed5
+"@types/node@npm:^18.11.3":
+  version: 18.11.3
+  resolution: "@types/node@npm:18.11.3"
+  checksum: 3a2a9142d891a90a195c296149bf64a69cc0abcc42f543be911ab22b2e0ead85ff077f90af92f0f13f6e3e5e72501469200fd753dfd1101825d4646a89d3ee47
   languageName: node
   linkType: hard
 
@@ -3189,20 +3236,20 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "minecransladle@workspace:."
   dependencies:
-    "@babel/core": ^7.19.3
+    "@babel/core": ^7.19.6
     "@babel/plugin-transform-react-jsx": ^7.19.0
     "@babel/plugin-transform-react-jsx-development": ^7.18.6
-    "@linaria/babel-preset": ^4.2.3
-    "@linaria/core": ^4.2.0
-    "@linaria/react": ^4.2.0
-    "@linaria/rollup": ^4.2.0
+    "@linaria/babel-preset": ^4.2.4
+    "@linaria/core": ^4.2.1
+    "@linaria/react": ^4.2.1
+    "@linaria/rollup": ^4.2.1
     "@preact/preset-vite": ^2.4.0
-    "@types/node": ^18.11.2
+    "@types/node": ^18.11.3
     "@types/react": ^18.0.21
     babel-plugin-transform-hook-names: ^1.0.2
     preact: ^10.11.2
     preact-render-to-string: ^5.2.5
-    react: "npm:@preact/compat@latest"
+    react: "npm:@preact/compat@17.1.2"
     typescript: ^4.8.4
     vite: ^3.1.8
     vite-plugin-ssr: ^0.4.43
@@ -3555,7 +3602,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:@preact/compat@latest":
+"react@npm:@preact/compat@17.1.2":
   version: 17.1.2
   resolution: "@preact/compat@npm:17.1.2"
   peerDependencies:
